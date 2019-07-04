@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14835.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="SectionHeaderView" customModule="CombineMarble" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J0w-h3-isg">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSN-c2-HOW">
+                            <rect key="frame" x="16" y="8" width="288" height="34"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="ZSN-c2-HOW" firstAttribute="centerY" secondItem="J0w-h3-isg" secondAttribute="centerY" id="6It-yw-iYY"/>
+                        <constraint firstAttribute="trailing" secondItem="ZSN-c2-HOW" secondAttribute="trailing" constant="16" id="A5P-gp-UfZ"/>
+                        <constraint firstItem="ZSN-c2-HOW" firstAttribute="top" secondItem="J0w-h3-isg" secondAttribute="top" constant="8" id="Gth-qM-Jix"/>
+                        <constraint firstAttribute="bottom" secondItem="ZSN-c2-HOW" secondAttribute="bottom" constant="8" id="P0L-42-LCD"/>
+                        <constraint firstItem="ZSN-c2-HOW" firstAttribute="leading" secondItem="J0w-h3-isg" secondAttribute="leading" constant="16" id="zWA-cx-Rly"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="J0w-h3-isg" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="KX1-5g-EIg"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="J0w-h3-isg" secondAttribute="trailing" id="c3t-76-mcB"/>
+                <constraint firstItem="J0w-h3-isg" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="f7U-gV-OQ5"/>
+                <constraint firstAttribute="bottom" secondItem="J0w-h3-isg" secondAttribute="bottom" id="phR-yM-gWh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="label" destination="ZSN-c2-HOW" id="Drx-dl-Bsd"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="125"/>
+        </collectionReusableView>
+    </objects>
+</document>
