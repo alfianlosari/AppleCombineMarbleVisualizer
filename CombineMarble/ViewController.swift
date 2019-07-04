@@ -129,7 +129,7 @@ class ViewController: UIViewController {
         }
         
         section.send()
-        let delay = 500
+        let delay = 1000
         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(delay)) {
             if section.isCombined {
                 let snapshot = self.dataSource.snapshot()
